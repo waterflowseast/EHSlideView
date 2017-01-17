@@ -246,6 +246,10 @@ static NSUInteger const kCacheCountLimit = 5;
         self.wrapperView0Active = !self.isWrapperView0Active;
         self.currentIndex = index;
         
+        [self bringSubviewToFront:self.activeWrapperView];
+        self.activeWrapperView.transform = CGAffineTransformIdentity;
+        self.inactiveWrapperView.transform = CGAffineTransformIdentity;
+        
         if (self.panningDirectionState != -1) {
             self.panningDirectionState = -1;
             
@@ -294,6 +298,10 @@ static NSUInteger const kCacheCountLimit = 5;
         self.activeWrapperView.transform = CGAffineTransformMakeTranslation(0, 0);
         self.inactiveWrapperView.transform = CGAffineTransformMakeTranslation(inactiveWrapperViewEndedTranslationX, 0);
     } completion:^(BOOL finished) {
+        [self bringSubviewToFront:self.activeWrapperView];
+        self.activeWrapperView.transform = CGAffineTransformIdentity;
+        self.inactiveWrapperView.transform = CGAffineTransformIdentity;
+
         if (self.panningDirectionState != -1) {
             self.panningDirectionState = -1;
             
