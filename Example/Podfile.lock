@@ -1,0 +1,16 @@
+PODS:
+  - EHSlideView (0.1.0)
+
+DEPENDENCIES:
+  - EHSlideView (from `../`)
+
+EXTERNAL SOURCES:
+  EHSlideView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EHSlideView: 5700a2542600ead2deda9fcdebd5d17dbc69de40
+
+PODFILE CHECKSUM: 764bc457966bee6767c2ff164b19b488e51cb622
+
+COCOAPODS: 1.0.0

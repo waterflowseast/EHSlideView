@@ -1,0 +1,6 @@
+framework module EHSlideView {
+  umbrella header "EHSlideView-umbrella.h"
+
+  export *
+  module * { export * }
+}
