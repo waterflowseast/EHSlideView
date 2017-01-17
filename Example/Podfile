@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EHSlideView_Example' do
+  pod 'EHSlideView', :path => '../'
+
+  target 'EHSlideView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
