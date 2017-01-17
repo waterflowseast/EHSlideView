@@ -1,16 +1,28 @@
 PODS:
-  - EHSlideView (0.1.0)
+  - EHHorizontalFixedWidthItemsView (1.0.1):
+    - EHItemViewCommon (~> 1.0.1)
+  - EHItemViewCommon (1.0.1)
+  - EHSlideView (1.0.0):
+    - YYCache (~> 1.0.4)
+  - Masonry (0.6.4)
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - EHHorizontalFixedWidthItemsView (~> 1.0.1)
   - EHSlideView (from `../`)
+  - Masonry (~> 0.6.4)
 
 EXTERNAL SOURCES:
   EHSlideView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EHSlideView: 5700a2542600ead2deda9fcdebd5d17dbc69de40
+  EHHorizontalFixedWidthItemsView: 4d0e9dad64df3d7e0960746e2a62c37ddd22c0d1
+  EHItemViewCommon: 42fabf0466bc6f53355af931076ba2cda3e7cc5f
+  EHSlideView: 323ff3d3744d1e151bb135f0c895c6bc2d61beda
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 764bc457966bee6767c2ff164b19b488e51cb622
+PODFILE CHECKSUM: 4c0ff9a3035cf5d1437c5b5aa9a2eebeaa2402ee
 
 COCOAPODS: 1.0.0

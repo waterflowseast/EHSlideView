@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'EHSlideView_Example' do
   pod 'EHSlideView', :path => '../'
+  pod 'Masonry', '~> 0.6.4'
+  pod 'EHHorizontalFixedWidthItemsView', '~> 1.0.1'
 
   target 'EHSlideView_Tests' do
     inherit! :search_paths
